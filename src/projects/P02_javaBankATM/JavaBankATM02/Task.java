@@ -1,11 +1,8 @@
-package projects.P02_javaBankATM;
+package projects.P02_javaBankATM.JavaBankATM02;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-import java.util.Scanner;
-
-class JavaBankAtm {
-   /*      ATM
+public class Task {
+    /*
+       ATM
         Kullaniciya giriş için kart numarasi ve şifresini isteyin, eger herhangi birini yanlis girerse tekrar isteyin.
         Kart numarasi aralarda boşluk ile girerse de eger doğruysa kabul edin.
         Kart numarasi ve sifre dogrulanirsa kullanicinin yapabileceği işlemleri ekrana yazdirin,
@@ -14,16 +11,6 @@ class JavaBankAtm {
 
         Para çekme ve para gonderme işleminde mevcut bakiyeden buyuk para çekilemez,
         Para gönderme işleminde istenen iban TR ile baslamali ve toplam 26 karakterli olmali, eger değilse menü ekranina geri donsun.
-        Sifre değiştirme işleminde mevcut şifreyi teyit ettikten sonra, sifre değişiklik işlemini yapmali,       */
-
-
-
-    public static void main(String[] args) {
-
-
-
-
-    }
+        Sifre değiştirme işleminde mevcut şifreyi teyit ettikten sonra, sifre değişiklik işlemini yapmali,
+     */
 }
-
-
