@@ -87,7 +87,7 @@ public class Islemler {
     }
 
     private static void sil() {
-        System.out.println("   ***   " + kisiTuru + " arama sayfası   ***");
+        System.out.println("   ***   " + kisiTuru + " silme sayfası   ***");
         System.out.println("");
         System.out.print("kimlik No giriniz : ");
         String kimlikNo = scan.next();
@@ -181,3 +181,5 @@ public class Islemler {
         }
     }
 }
+
+

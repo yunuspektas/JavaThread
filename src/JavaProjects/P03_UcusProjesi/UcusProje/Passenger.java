@@ -1,16 +1,16 @@
-package JavaProjects.P03_UcusProjesi.Ucus_projesi01;
+package JavaProjects.P03_UcusProjesi.UcusProje;
 
-public class TMM_Passenger {
-    private int flyTo ;
-    private int age ;
-    private int flyType ;
+public class Passenger {
+    private int flyTo;
+    private int age;
+    private int flyType;
 
     // parametresiz contructor
-    public TMM_Passenger() {
+    public Passenger() {
     }
 
     // parametreli constructor
-    public TMM_Passenger(int flyTo, int age, int flyType) {
+    public Passenger(int flyTo, int age, int flyType) {
         this.flyTo = flyTo;
         this.age = age;
         this.flyType = flyType;

@@ -8,15 +8,15 @@ public class Dikdortgen extends Sekil {
 	}
 
 
-	public double cevreHesaplama() {
-		return super.cevreHesaplama();
-	}
+//	public double cevreHesaplama() {
+//		return super.cevreHesaplama();
+//	}
 
 
-	public double alanHesaplama() {
-		//return uzunKenar*kisaKenar;
-		return super.alanHesaplama();
-	} 
+//	public double alanHesaplama() {
+//		//return uzunKenar*kisaKenar;
+//		return super.alanHesaplama();
+//	}
 
 
 	@Override
