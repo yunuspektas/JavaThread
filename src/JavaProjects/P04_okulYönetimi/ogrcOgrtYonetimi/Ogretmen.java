@@ -34,6 +34,7 @@ public class Ogretmen extends Kisi {
 
     @Override
     public String toString() {
+
         return "Ogrenci{" +
                 " adSoyad='" + getAdSoyad() + '\'' +
                 ", kimlikNo='" + getKimlikNo() + '\'' +
@@ -41,5 +42,57 @@ public class Ogretmen extends Kisi {
                 ", bölüm='" + bolum + '\'' +
                 ", Sicil No='" + sicilNo + '\'' +
                 '}';
+||||||| ce21405
+        return "Ogretmen{" +
+                "bolum='" + bolum + '\'' +
+                ", sicilNo='" + sicilNo + '\'' +
+                '}';
+=======
+        return "Ogretmen{" +
+                "bolum='" + bolum + '\'' +
+                ", sicilNo='" + sicilNo + '\'' +
+                "} " + super.toString();
+>>>>>>> f08342fb6e04d2bf143c3abfbb25d2b1b7e376a2
     }
+// @Override
+   // public String toString() {
+   //     return "Ogretmen{" +
+   //             "bolum='" + bolum + '\'' +
+   //             ", sicilNo='" + sicilNo + '\'' +
+   //             '}';
+   // }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

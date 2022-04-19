@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Islemler {
 
     static List<Kisi> ogrncListesi = new ArrayList<>();
-    static ArrayList<Kisi> ogrtmListesi = new ArrayList<>();
+    static ArrayList<Kisi> ogrtListesi = new ArrayList<>();
     static Scanner scan = new Scanner(System.in);
     static String kisiTuru;
 
@@ -63,7 +63,12 @@ public class Islemler {
                 islemMenusu();
                 break;
             case 2:
+<<<<<<< HEAD
                 ara();
+||||||| ce21405
+=======
+                arama();
+>>>>>>> f08342fb6e04d2bf143c3abfbb25d2b1b7e376a2
                 islemMenusu();
                 break;
             case 3:
@@ -71,7 +76,13 @@ public class Islemler {
                 islemMenusu();
                 break;
             case 4:
+<<<<<<< HEAD
                 sil();
+||||||| ce21405
+=======
+                sil();
+
+>>>>>>> f08342fb6e04d2bf143c3abfbb25d2b1b7e376a2
                 islemMenusu();
                 break;
             case 0:
@@ -85,6 +96,7 @@ public class Islemler {
         }
 
     }
+
 
     private static void sil() {
         System.out.println("   ***   " + kisiTuru + " silme sayfası   ***");
@@ -153,6 +165,103 @@ public class Islemler {
         }
     }
 
+||||||| ce21405
+=======
+    private static void sil() {
+
+        System.out.println("   ***   " + kisiTuru + " silme sayfası   ***");
+
+        boolean flag = true;//flag bayrak olsun true->bayrak havada false->bayrak yerde
+
+        if (kisiTuru.equalsIgnoreCase("OGRENCI")){//ogrenci arıyorsa if body çalışacak
+            scan.nextLine();//dummy
+            System.out.println();//bos satır print
+            System.out.print("silinecek ogrenci kimlik no giriniz : ");
+
+            String silinecekKimlikNo=scan.next();
+
+            for (Kisi k:ogrncListesi) {
+                if (k.getKimlikNo().equals(silinecekKimlikNo)){//flag havada
+                    System.out.println("silinen ogrenci : "+k.getAdSoyad());
+                    ogrncListesi.remove(k);//ogrsc silindi
+                    flag=false;
+                    break;
+                }
+
+            }if (flag){//flag inince calışacak block
+                System.out.println("silinecek ogrenci mevcut değil ");
+            }
+        }else{//ogretmen aranıyorsa else body calışacak
+            System.out.print("silinecek ogretmenin kimlik no giriniz : ");
+            String silinecekOgrtKimlikNo=scan.next();
+            for (Kisi k: ogrtListesi) {
+                if (k.getKimlikNo().equalsIgnoreCase(silinecekOgrtKimlikNo)){//flag havada
+                    System.out.println("silinen ogretmen : "+k.getAdSoyad());
+                    ogrtListesi.remove(k);
+                    flag=false;
+                    break;
+                }
+
+            }if (flag){//flag inince
+                System.out.println("silnecek ogretmen mevcut değil ");
+            }
+        }
+
+    }
+
+    private static void listele() {
+
+        System.out.println("   ***   " + kisiTuru + " listeleme sayfası   ***");
+        if (kisiTuru.equalsIgnoreCase("OGRENCI")){//ogrenci listeleme if
+            System.out.println(ogrncListesi);
+        }else {//ogretmen listeleniyor
+            for (Kisi k: ogrtListesi) {
+                System.out.println(k.toString()+" adı soyadı : "+k.getAdSoyad()+k.getYas());
+
+            }
+        }
+    }
+
+    private static void arama() {
+        System.out.println("   ***   " + kisiTuru + " arama sayfası   ***");
+
+        boolean flag = true;//flag bayrak olsun true->bayrak havada false->bayrak yerde
+        //AHAN Da  TRICK : flag iki farlı method'da da kullanıldıgı icin static yapmak daha clean code olur....
+
+        if (kisiTuru.equalsIgnoreCase("OGRENCI")){//ogrenci arıyorsa if body çalışacak
+            scan.nextLine();//dummy
+            System.out.println();//bos satır print
+            System.out.print("aradıgınız ogrenci kimlik no giriniz : ");
+
+            String arananKimlikNo=scan.next();
+
+            for (Kisi k:ogrncListesi) {
+                if (k.getKimlikNo().equals(arananKimlikNo)){//flag havada
+                    System.out.println("aradıgınız ogrenci : "+k.getAdSoyad());
+                    flag=false;
+                }
+
+            }if (flag){//flag inince
+                System.out.println("aradıgınız ogrenci mevcut değil ");
+            }
+        }else{//ogretmen aranıyorsa else body calışacak
+            System.out.print("aradıgınız ogretmenin kimlik no giriniz : ");
+            String arananKimlikNo=scan.next();
+            for (Kisi k: ogrtListesi) {
+                if (k.getKimlikNo().equalsIgnoreCase(arananKimlikNo)){//flag havada
+                    System.out.println("aradıgınız ogretmen : "+k.getAdSoyad());
+                    flag=false;
+                }
+
+            }if (flag){//flag inince
+                System.out.println("aradıgınız ogretmen mevcut değil ");
+            }
+        }
+
+
+    }
+
+>>>>>>> f08342fb6e04d2bf143c3abfbb25d2b1b7e376a2
     private static void ekle() {
         System.out.println("   ***   " + kisiTuru + " ekleme sayfası   ***");
         System.out.print("ad soyad giriniz : ");
@@ -166,18 +275,19 @@ public class Islemler {
 
             System.out.print("ogrenci No giriniz : ");
             String ogrcNo = scan.next();
-            scan.nextLine();//dummy hayalet komut
+            scan.nextLine();//dummy --> hayalet komut--> iki tane eşit scan.next(); komutu ayırmak için araya girmeli
             System.out.print("sınıf giriniz : ");
             String sınıf = scan.next();
             Ogrenci sefilOgrenci = new Ogrenci(adSoyad, kimlikNo, yas, ogrcNo, sınıf);//p'li cons ogrc obj create edildi
             ogrncListesi.add(sefilOgrenci);
-        } else {
+        } else {//kisiTuru öğrenci ise if çalısir değilse kisiTuru öğretmen demektir ki else body çalışır
             System.out.print("sicil No giriniz : ");
             String sicilNo = scan.nextLine();
+            scan.nextLine();//dummy
             System.out.print("bolum giriniz : ");
             String bolum = scan.nextLine();
             Ogretmen muhtesemOgretmen = new Ogretmen(adSoyad, kimlikNo, yas, sicilNo, bolum);//p'li cons ogrtm obj create edildi
-            ogrtmListesi.add(muhtesemOgretmen);
+            ogrtListesi.add(muhtesemOgretmen);
         }
     }
 }

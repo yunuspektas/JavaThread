@@ -33,6 +33,12 @@ public class Ogrenci extends Kisi {
     }
 
 
+
+||||||| ce21405
+
+
+=======
+>>>>>>> f08342fb6e04d2bf143c3abfbb25d2b1b7e376a2
     @Override
     public String toString() {
         return "Ogrenci{" +
@@ -41,8 +47,16 @@ public class Ogrenci extends Kisi {
                 ", yas=" + getYas() +
                 ", ogrcNo='" + ogrcNo + '\'' +
                 ", sınıf='" + sınıf + '\'' +
-                '}';
+                "} " + super.toString();
     }
+
+// @Override
+   // public String toString() {
+   //     return "Ogrenci{" +
+   //             "ogrcNo='" + ogrcNo + '\'' +
+   //             ", sınıf='" + sınıf + '\'' +
+   //             '}';
+   // }
 }
 
 
