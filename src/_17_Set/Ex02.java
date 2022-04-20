@@ -54,8 +54,6 @@ Colections.sort(arr1)
 
 
 
-||||||| f08342f
-=======
 
     public static int getRandomInt(int min, int max) {//bu method max ile min arası sayi return eder
 
@@ -69,5 +67,5 @@ Colections.sort(arr1)
         }
         return bosList;
     }
->>>>>>> 65834c7f9c86d990d7693be605134558cb726715
+
 }
