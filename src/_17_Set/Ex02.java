@@ -1,7 +1,6 @@
 package _17_Set;
 
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.*;
 
 public class Ex02 {
 
@@ -22,5 +21,8 @@ public class Ex02 {
     public static void main(String[] args) {
 
 
+
     }
+
+
 }
