@@ -2,7 +2,6 @@ package JavaProjects.P11_depoYonetimi.Mrc;
 
 import java.util.Scanner;
 
-import static JavaProjects.P03_UcusProjesi.UcusProje.Menu.menu;
 
 public class Menu {
     static Scanner scan = new Scanner(System.in);
@@ -15,27 +14,27 @@ public class Menu {
         switch (secim) {
             case 1 : {
                 DepoMethods.urunTanimlama();
-                menu();
+                menuGiris();
             }
             case 2 : {
                 DepoMethods.urunListele();
-                menu();
+                menuGiris();
             }
             case 3 : {
                 DepoMethods.urunGirisi();
-                menu();
+                menuGiris();
             }
             case 4 : {
                 DepoMethods.urunuRafaKoy();
-                menu();
+                menuGiris();
             }
             case 5 : {
                 DepoMethods.urunCikisi();
-                menu();
+                menuGiris();
             }
             default : {
                 System.out.println("Lütfen seçim işlemini yapınız");
-                menu();
+                menuGiris();
             }
         }
     }
