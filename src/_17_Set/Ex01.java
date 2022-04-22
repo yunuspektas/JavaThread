@@ -20,7 +20,7 @@ public class Ex01 {
         elementEkle(hs,new int[]{34,35,45,61,38,41});
     }
 
-<<<<<<< HEAD
+
     /* !mrc main
         Set<Integer> st = new HashSet<>();
         int arr[] = new int[] {1,2,3} ;
@@ -30,9 +30,9 @@ public class Ex01 {
      !mrc main end
      */
 
-||||||| f08342f
 
-=======
+
+
     private static void elementEkle(HashSet<Integer> hs, int[] arr) {
         for (Integer sayi:arr) {
             hs.add(sayi);
@@ -43,7 +43,7 @@ public class Ex01 {
         for (Integer s:hs) {
             System.out.print(s+" ");
         }
->>>>>>> 65834c7f9c86d990d7693be605134558cb726715
+
     }
     /* !mrc methods
     private static void elementEkle(Set<Integer> st, int[] arr) {
