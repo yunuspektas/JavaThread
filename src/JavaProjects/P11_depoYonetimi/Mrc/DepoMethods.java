@@ -30,10 +30,9 @@ public class DepoMethods {
 
     public static void urunListele() {
         int outherLoop = itemMap.keySet().size();
-        //System.out.println("outher " + outherLoop);
+
         int innerLoop = itemMap.values().toArray()[0].toString().split(" ").length;
-        //System.out.println(itemMap.values());
-        //System.out.println("inner " + innerLoop);
+
         System.out.println("");
         String liste = String.format("%6S", "id") + "\t\t" + "ismi" + "\t\t" + "üretici" + "\t\t" + "miktarı" + "\t\t" + "birimi" + "\t\t" + "raf";
         System.out.println(liste);
