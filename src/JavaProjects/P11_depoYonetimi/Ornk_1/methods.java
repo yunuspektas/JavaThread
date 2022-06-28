@@ -1,8 +1,6 @@
 package JavaProjects.P11_depoYonetimi.Ornk_1;
 
-import JavaProjects.P11_depoYonetimi.depoYonetimi01.Urunler;
 
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Scanner;
 import java.util.Set;
