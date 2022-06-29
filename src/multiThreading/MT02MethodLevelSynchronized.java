@@ -25,13 +25,13 @@ Synchronized keywordunun farklı kullanımları bulunmaktadır.
         Thread thHabil = new Thread(new Runnable() {
             @Override
             public void run() {
-                Sevdiren.kur("HABİL canımsın :) ");
+                SevdirenClass.kurYap("HABİL canımsın :) ");
             }
         });
         Thread thKabil = new Thread(new Runnable() {
             @Override
             public void run() {
-                Sevdiren.kur("kabil ben sana ne diiim :( ");
+                SevdirenClass.kurYap("kabil ben sana ne diiim :( ");
             }
         });
 
@@ -45,9 +45,9 @@ Synchronized keywordunun farklı kullanımları bulunmaktadır.
 // join() metodu bir thread'in tamamıyla bitmesinin beklenmesini sağlarken, syncronization aynı anda bir kaynağa
 // erişimi engellemektedir.
 // Hangisinin daha elverişli olacağı uygulamanın gereksinimlerine ve koşullara göre değişebilir.
-class Sevdiren {//Mutiple Class
+class SevdirenClass {//Mutiple Class
 //Method-level synchronized
-    public synchronized static void kur(String thread) {//synchronized --> key word ile bu methodun thread'ler tarafından eş zamanlı call edilmesi lock2'landı
+    public synchronized static void kurYap(String thread) {//synchronized --> key word ile bu methodun thread'ler tarafından eş zamanlı call edilmesi lock2'landı
 
         for (int i = 1; i <= 10; i++) {
             MT02MethodLevelSynchronized.afitap++;

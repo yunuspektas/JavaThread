@@ -38,7 +38,7 @@ public class MT03BlockLevelSynchronized {
 class Parantez {//Multiple Class
 
     public void parantezKoy() {//process--> [[[[[ ]]]]] & 25 ms sleep
-        synchronized (this) {//block  synchronized->block lock'landı
+        synchronized (this) {//sadece parantez yazdıran for block synchronized yapılarak eşzamanlılık kısıtlandı.
             for (int i = 1; i <= 10; i++) {//bu action eşzamanalı çalışılmaması gereken afitap'a kur yapma
                 if (i <= 5) {
                     System.out.print("[");
